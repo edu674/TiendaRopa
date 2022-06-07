@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    /*background-color: blueviolet;*/
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,1)), url("../img/ropa1.jpg");
+    background-size: contain;
+    font-family: 'Montserrat', sans-serif;
+}
+
+    .contenedor{
+        height: auto;
+    }
+
+    .contenedor figure{
+       position:relative;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    .contenedor figure img{
+        width: 100%;
+        transition: all 400ms ease-out;
+        
+    }
+    .contenedor figure .capa{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.7);
+        transition: all 400ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+       text-align: center;
+    }
+    .contenedor figure:hover > .capa {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .contenedor figure:hover > img{
+        transform: scale(1.3);
+    }
+    .contenedor figure .capa h4{
+        color: #fff;
+        transition: all 400ms ease-out;
+        margin-top: 10%;
+    }
+    .contenedor figure .capa p{
+        color: #fff;
+        font-size: 15px;
+        width: 100%;
+    }
+
+.blur li>a:hover{
+    transition: .3s;
+    color: #ffab00;
+}
+
+.billingAddress{
+    color: white;
+}
+
+input{
+    color: white;
+}
+
+.row .col.s6:hover{
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+}
+
+.blur li>a{
+    color: white;
+}
+
+.blur li>a>i.material-icons{
+    color: white;
+}
+
+h1, h2, h3, h4, h5 {
+    color: white;
+}
+
+.producto h6{
+    color: white;
+}
+
+.producto a{
+    margin-left: 10%;
+}
+
+th{
+    color: white;
+    border-bottom: 1px solid #424242;
+}
+
+td{
+    color: white;
+    border-bottom: 1px solid #424242;
+}
+
+.colorbtn{
+    background-color: #ffab00;
+}
+
+.blur{
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.brand-logo li{
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+. .main-header {
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+}
+.carousel {
+    min-height: 400px;
+}
+.carousel .carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    background: lightgray;
+    width: 400px;
+    height: 400px;
+}
+.carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.carousel .indicators .indicator-item {
+    background: black;
+}
+.cont {
+    width: 450px;
+    overflow: auto;
+}
+.linea-division {
+    width: 80%;
+    height: 2px;
+    background-color: black;
+}
+.subtitulo {
+    margin: 0;
+    color: black;
+    display: inline;
+    font-size: 60px;
+    font-weight: 200;
+    font-family: 'Dancing Script';
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+}
+.material-icons.md-36 {
+    font-size: 36px;
+}
+.material-icons.md-70 {
+    font-size: 70px;
+    color: white;
+}
+::placeholder {
+    color: #999492;
+    /*font-size: 1em;*/
+}
+.modal-div {
+    border-radius: 20px;
+    background: black;
+}
+span.badge {
+    min-width: 2.3rem;
+    padding: 0 5px;
+    position: relative;
+    right: 5px;
+    top: 5px;
+    border-radius: 50%;
+}
+.textoTitulo{
+    color: white;
+}
+.txtPrecio{
+padding: 0px;
+padding-left: 0px;
+font-size: 40px;
+font-family: 'bold';
+color: white;
+}
+.boton{
+   border-radius: 10px;
+   font-size: 100%;
+   outline: none;
+   justify-content: center;
+   text-align:center;
+   width: 70%;
+   height: 50px;
+   position: relative; 
+}
+.carrusel .prev{
+    position: absolute;
+    top: 35%;
+    left: -5%;
+    cursor: pointer;
+}
+
+.carrusel .next{
+    position: absolute;
+    top: 35%;
+    right: -5%;
+    cursor: pointer;
+}
+.slick-dots{
+    visibility: hidden;
+}
+.sidemenu{
+    position: relative;
+    min-height: 80vh;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.navegacion{
+    position: fixed;
+    top: 6%;
+    bottom: 20%;
+    width: 60px;
+    /*border-radius: 10px;*/
+    box-sizing: initial;
+    border-left: 5px;
+    background:  rgba(0,0,0,0.9);
+    transition: 0.5s;
+    height: 95%;
+    /*min-height: 400px;*/
+    overflow-x: hidden;
+    overscroll-behavior: auto contain;
+    /*margin-left: 1%;*/
+   /* box-sizing: border-box;*/
+} 
+.navegacion.open{
+  width: 220px;
+
+}
+
+.navegacion .ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+}
+.navegacion .ul .li{
+    position: relative;
+    width: 100%;
+}
+
+.navegacion ul li a{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+
+}
+ .navegacion ul li a .material-icons{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: white;
+    margin-top: 12px;
+}
+
+.navegacion ul li a .titulo{
+    position: relative;
+    display: block;
+    padding-left: 10%;
+    height: 60px;
+    line-height: 60px;
+    margin-top: 12px;
+}
+footer{
+    position: relative;
+    overflow: visible;
+}
+
+.info{
+    color: white;
+    width: 70%;
+}
+
+.textContent{
+padding-left: 8%;
+padding-top: 3%;
+/*padding-bottom: 3%;*/
+font-family: arial black;
+}
+
+.leter input{
+    color: white;
+}
+
+.modallogout{
+    margin-top: 10%;
+    width: 40%;
+    height: 40%;
+    background:  rgba(0,0,0,0.7);
+}
+.modallogout a{
+   margin-top: 5%;
+   width: 30%;
+   margin-right: 5%;
+   margin-left: 5%;
+   text-align: center;
+   padding: 1%;
+
+}
+.txttable{
+    text-align: right;
+    margin-right: 7%;
+    font-family: "Arial Black";
+}
+.plus{
+    border-radius:  5px;
+    margin-right: 10%;
+    /*width: 15%;*/
+    font-size: 200%;
+    
+}
+.less{
+   border-radius: 5px;
+   margin-left: 10%;
+   /*width: 15%;*/
+   font-size: 200%;
+}
+.preload{
+    margin-left: 50%;
+    margin-top: 25%;
+    margin-bottom: 25%;
+
+}
+
+.imgLogin {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,1)), url("../img/ropa3.jpg");
+}
+nav .sidenav-trigger{
+float: right;
+}
